@@ -1,0 +1,181 @@
+.admin-profile-page {
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px #0000001a;
+}
+
+.admin-profile {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+    color: #2C3E50;
+    /* Dark text for readability */
+    border-radius: 20px;
+    padding: 50px;
+    /* Increased padding for larger layout */
+    max-width: 1000px;
+    /* Wider layout */
+    margin: auto;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+    margin-top: 100px;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+    /* Space between image and form */
+}
+
+.profile-image {
+    width: 150px;
+    /* Increased size */
+    height: 150px;
+    /* Increased size */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid tomato;
+    /* Tomato border */
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+}
+
+.role {
+    font-size: 20px;
+    /* Increased font size */
+    font-weight: 600;
+    color: gold;
+    /* Persian Blue for the role */
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: 2px solid gold;
+    /* Persian Blue */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    /* Light background */
+}
+
+.upload-buttons {
+    display: flex;
+    align-items: center;
+    /* Align items vertically to the center */
+    gap: 10px;
+    /* Space between buttons/icons */
+    width: 100%;
+    margin-top: 15px;
+}
+
+.icon3 {
+    color: #2C3E50;
+    margin-bottom: 8px;
+}
+
+.upload-buttons label,
+.upload-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.upload-buttons i {
+    font-size: 20px;
+    color: #2C3E50;
+}
+
+.upload-buttons button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.update-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Space between inputs */
+    flex-grow: 1;
+}
+
+.update-form input {
+    padding: 16px;
+    /* Increased padding */
+    border: 2px solid #2C3E50;
+    /* Dark border */
+    border-radius: 10px;
+    font-size: 18px;
+    /* Larger font size */
+    transition: border-color 0.3s;
+}
+
+.update-form input:focus {
+    border-color: tomato;
+    /* Tomato on focus */
+    outline: none;
+}
+
+.upload-buttons {
+    display: flex;
+    justify-content: space-between;
+    /* Space between buttons */
+    width: 100%;
+    /* Full width */
+    margin-top: 15px;
+}
+
+.submit-btn-prf {
+    padding: 8px 12px;
+    /* Reduced padding to make the button smaller */
+    font-size: 14px;
+    /* Smaller font size */
+    background: tomato;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    align-self: flex-end;
+    /* Align the button to the right */
+    margin-top: auto;
+    /* Push the button to the bottom of the form */
+    width: auto;
+    /* Adjust the width automatically based on the content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Shadow for depth */
+}
+
+.upload-buttons button {
+    background-color: transparent;
+    z-index: 10;
+    color: #2C3E50;
+
+}
+
+.upload-buttons button:active {
+    transform: translateY(0);
+    /* Reset on click */
+    box-shadow: none;
+    /* Remove shadow when clicked */
+}
+
+.upload-buttons button i {
+    margin-right: 8px;
+    /* Space between icon and text */
+    font-size: 18px;
+    /* Icon size */
+    color: #2C3E50;
+}

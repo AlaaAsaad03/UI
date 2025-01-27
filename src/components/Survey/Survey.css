@@ -1,0 +1,176 @@
+.creative-survey-container {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #fff;
+    color: #333;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.creative-survey-header {
+    margin-bottom: 50px;
+}
+
+.creative-survey-title {
+    font-size: 3rem;
+    color: tomato;
+    /* Tomato color */
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.creative-survey-description {
+    font-size: 1.3rem;
+    color: #6a6a6a;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.creative-survey-info {
+    font-size: 1.1rem;
+    color: #2e3a8c;
+    /* Persian Blue */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.creative-survey-case-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.creative-survey-case-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #e0e0e0;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.creative-survey-case-card:hover {
+    transform: translateY(-12px);
+    border-color: tomato;
+    /* Tomato color */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.creative-survey-case-card.selected {
+    background-color: #ffe6e6;
+    /* Light tomato background */
+    border-color: tomato;
+}
+
+.creative-survey-case-title {
+    font-size: 1.7rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.creative-survey-case-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.creative-survey-submit-button {
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: tomato;
+    /* Tomato color */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.creative-survey-submit-button:hover {
+    background-color: #cc3d5c;
+    /* Darker tomato */
+    transform: scale(1.05);
+}
+
+.creative-survey-error-message {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.creative-survey-case-item {
+    font-family: 'Georgia', serif;
+    /* A classic serif font */
+    font-size: 1rem;
+    /* Slightly larger for readability */
+    color: #444;
+    /* Darker shade for better contrast */
+    margin: 5px 0;
+    /* Space between items */
+}
+
+.creative-survey-items-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: tomato;
+    /* Consistent with the theme */
+    margin-bottom: 10px;
+    /* Space below the header */
+}
+
+.creative-survey-case-items {
+    display: flex;
+    /* Flexbox for layout */
+    flex-direction: column;
+    /* Stack items vertically */
+    gap: 10px;
+    /* Space between items */
+}
+
+.creative-survey-case-item {
+    background-color: #f8f8f8;
+    /* Soft background color */
+    border: 1px solid #dcdcdc;
+    /* Subtle border */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 15px;
+    /* Padding for comfort */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Gentle shadow */
+    transition: transform 0.2s ease;
+    /* Smooth hover effect */
+}
+
+.creative-survey-case-item:hover {
+    transform: translateY(-2px);
+    /* Subtle lift on hover */
+    border-color: #b0b0b0;
+    /* Darken border on hover */
+}

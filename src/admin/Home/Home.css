@@ -1,0 +1,144 @@
+/* Container Styling */
+.home-creative-container {
+    padding: 40px;
+    /* Increase padding for more spacing */
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px #0000001a;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #2C3E50;
+    /* Dark text for readability */
+    border-radius: 20px;
+    padding: 80px;
+    /* Increase padding for a larger layout */
+    max-width: 1400px;
+    /* Allow the hero section to take more width */
+    width: 90%;
+    /* Set width to adjust with the screen size */
+    margin: auto;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+    margin-top: 80px;
+    height: auto;
+    /* Allow the section to grow with content */
+}
+
+/* Welcome Text Content */
+.welcome-content {
+    flex: 1;
+    margin-right: 20px;
+    /* Add spacing between text and image */
+}
+
+.hero-title {
+    font-size: 4rem;
+    /* Increase font size for a larger heading */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    /* Increase subtitle size */
+    margin-bottom: 40px;
+    /* Add spacing below subtitle */
+    line-height: 1.8;
+}
+
+/* Illustration Styling */
+.hero-illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-spline {
+    max-width: 800px;
+    /* Increase the maximum width */
+    width: 100%;
+    /* Allow it to scale responsively */
+    height: auto;
+    /* Maintain aspect ratio */
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 30px;
+    /* Add more spacing between buttons */
+}
+
+/* Buttons */
+.primary-btn,
+.secondary-btn {
+    padding: 20px 40px;
+    /* Larger buttons */
+    font-size: 1.2rem;
+    /* Bigger text */
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Primary Button */
+.primary-btn {
+    background: linear-gradient(135deg, #ff6f61, #e86052);
+    /* Tomato gradient */
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 111, 97, 0.4);
+}
+
+.primary-btn:hover {
+    background: linear-gradient(135deg, #e86052, #ff6f61);
+    /* Reverse gradient on hover */
+    box-shadow: 0 6px 20px rgba(255, 111, 97, 0.6);
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+/* Secondary Button */
+.secondary-btn {
+    background: linear-gradient(135deg, #1e90ff, #4682b4);
+    /* Persian Blue gradient */
+    color: white;
+    border: 2px solid transparent;
+    /* Remove default border */
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.4);
+}
+
+.secondary-btn:hover {
+    background: linear-gradient(135deg, #4682b4, #1e90ff);
+    /* Reverse gradient on hover */
+    box-shadow: 0 6px 20px rgba(30, 144, 255, 0.6);
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+
+
+/* Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

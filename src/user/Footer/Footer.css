@@ -1,0 +1,156 @@
+.footer {
+    background-color: #1a1a2e;
+    color: #dcdcdc;
+    padding: 60px 5vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 40px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.footer h2 {
+    font-size: 1.5rem;
+    color: #ff6f61;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+}
+
+.footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.7s forwards;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer ul li:hover {
+    color: #ff6f61;
+    transform: translateX(5px);
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+.footer-social-icons img {
+    width: 35px;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.8;
+}
+
+.footer-social-icons img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+.footer hr {
+    border: none;
+    height: 1px;
+    background: #444;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #bbbbbb;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.footer-call-to-action {
+    background-color: #ff6f61;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+}
+
+.footer-call-to-action:hover {
+    background-color: #e05a50;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer ul li svg {
+    margin-right: 8px;
+    /* Space between icon and text */
+}

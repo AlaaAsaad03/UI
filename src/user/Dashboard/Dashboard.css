@@ -1,0 +1,102 @@
+/* Main Dashboard Layout */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: max-content;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  z-index: 10;
+}
+
+.dashboard-content {
+  display: flex;
+  margin-top: 20px;
+}
+
+.dashboard-main {
+  display: flex;
+  flex-direction: column;
+  /* Space between sections */
+}
+
+.stat {
+  display: flex;
+  flex-direction: row;
+  /* Row layout for the main stats container */
+  /* Space between CategoryBreakdown and the other stats group */
+}
+
+.CategoryBreakdown {
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+.WeeklySpending,
+.UserVsAverageSpending {
+  margin-top: 5px;
+  margin-left: 80px;
+  flex: 1;
+  /* Both have equal width */
+}
+
+.WeeklySpending {
+  height: 100px;
+  /* Adjust height as needed */
+}
+
+
+
+.right-stats {
+  display: flex;
+  flex-direction: column;
+  /* Stack WeeklySpending and UserVsAverageSpending vertically */
+  gap: 10px;
+  /* Space between the two statistics */
+}
+
+.MyOrders {
+  margin-top: 5px;
+  /* Space between statistics and the table */
+}
+
+.sidebar {
+  background-color: #ffffff;
+  margin-right: 20px;
+  /* Spacing between sidebar and main content */
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .statistics-container {
+    grid-template-columns: 1fr;
+    /* Stack graphs vertically on smaller screens */
+  }
+
+  .large-statistic {
+    grid-column: span 1;
+    /* Treat large graph like others */
+    height: auto;
+    /* Adjust height for responsiveness */
+  }
+}
+
+.dashboard-layoutt {
+  display: flex;
+}
+
+.dashboard-contentt {
+  flex: 1;
+  margin-left: 250px;
+  /* Sidebar width */
+  padding: 20px;
+  overflow-y: auto;
+  /* Allows scrolling */
+  height: 100vh;
+  /* Full viewport height */
+  background-color: white;
+}

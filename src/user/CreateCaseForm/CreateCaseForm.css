@@ -1,0 +1,345 @@
+/* Main form container */
+.case-form-containerr {
+  max-width: 1800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  animation: fadeIn 0.6s ease-out;
+  width: 1250px;
+  position: relative;
+}
+
+/* Form groups */
+.formm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-groupp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: calc(50% - 10px);
+}
+
+.input-containerr {
+  position: relative;
+  width: 100%;
+}
+
+
+.form-groupp.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  /* Space between fields */
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  gap: 820px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.form-buttons .location-btn {
+  display: flex;
+  align-items: center;
+  background: #003153;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  background: tomato;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: red;
+  transform: translateY(-2px);
+}
+
+.location-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btnlocation-icon {
+  margin-right: 5px;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Location display */
+.location-display {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #444;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  /* Center the items vertically */
+  margin-bottom: 20px;
+  width: calc(50% - 10px);
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  /* Center everything vertically */
+  margin-bottom: 20px;
+  width: calc(50% - 10px);
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.form-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #003153;
+}
+
+
+.page-title {
+  font-size: 2rem;
+  /* Adjust size */
+  color: tomato;
+  /* Adjust color */
+  text-align: center;
+  /* Optional */
+  margin-bottom: 5px;
+  /* Adjust spacing */
+}
+
+.title-underline {
+  width: 50%;
+  /* Adjust width */
+  height: 4px;
+  /* Adjust thickness */
+  background-color: #ffe8e4;
+  /* Adjust color */
+  margin: 0 auto;
+  /* Center the underline */
+  border-radius: 2px;
+  /* Optional rounded corners */
+  margin-bottom: 50px;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Content */
+.popup-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.4s ease-out;
+}
+
+/* Popup Title */
+.popup-content h2 {
+  font-size: 1.5rem;
+  color: #003153;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.popup-buttons .closee-btn {
+  background: #328dce;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 150px;
+  margin: 20px auto 0;
+}
+
+/* Items List */
+.popup-content .items-list {
+  max-height: 300px;
+  /* Limit height */
+  overflow-y: auto;
+  /* Enable scrolling */
+  scrollbar-width: thin;
+  /* For Firefox */
+  scrollbar-color: #ccc #f0f0f0;
+  /* For Firefox */
+}
+
+.popup-content .items-list::-webkit-scrollbar {
+  width: 8px;
+  /* Width of the scrollbar */
+}
+
+.popup-content .items-list::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  /* Track color */
+}
+
+.popup-content .items-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  /* Scrollbar color */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+.popup-content .items-list::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+  /* Darker on hover */
+}
+
+.items-list {
+  max-height: 300px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+
+/* Card Styles */
+.item-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  /* Separator between items */
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.item-card:last-child {
+  border-bottom: none;
+  /* Remove border for last item */
+}
+
+.item-card img {
+  width: 40px;
+  /* Fixed size for item images */
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.item-card:hover {
+  background: #f0f0f0;
+  /* Light hover effect */
+}
+
+/* Close Button */
+.popup-overlay .closee-btn {
+  background: #003153;
+  color: white;
+  padding: 10px 20px;
+  /* Adjust padding */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 150px;
+  margin: 20px auto 0;
+}
+
+.popup-content button:hover {
+  background: #002640;
+}
+
+
+.popup-content button:hover {
+  background: #002640;
+}
+
+/* Add this to your CSS file */
+.popup-content .items-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup-content .items-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.popup-content .items-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.item-card.selected {
+  background: #d1e7ff;
+  border-left: 4px solid #003153;
+}
+
+.item-form-input-container .form-select {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: 2px solid #ebe8e8;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+.item-form-input-container {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  margin-right: 10px;
+}
+
+
+.item-form-input[name="salary"],
+.item-form-input[name="deadline"] {
+  padding-left: 40px;
+  background-color: white;
+}

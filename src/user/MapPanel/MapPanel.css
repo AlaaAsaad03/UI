@@ -1,0 +1,122 @@
+.map-panel-section {
+    margin-top: 0;
+    padding: 20px;
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 1450px;
+    margin-left: 195px;
+    margin-right: 195px;
+}
+
+.title {
+    margin-bottom: 2rem;
+}
+
+.title p {
+    font-size: 1.2rem;
+    color: #ff6347;
+    /* Tomato orange */
+}
+
+.title h2 {
+    font-size: 2rem;
+    color: #003153;
+    /* Prussian blue */
+}
+
+.map-panel-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 1500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    height: 600px;
+}
+
+.map-panel-container:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.motivation-container {
+    flex: 1;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.motivation-container h2 {
+    font-size: 2.5rem;
+    color: #003153;
+    margin: 0;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.motivation-container p {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 2;
+    margin-top: 11px;
+}
+
+.counter {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.counter h1 {
+    font-size: 3rem;
+    color: #ff6347;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.counter h1:hover {
+    transform: scale(1.1);
+    color: #ff4500;
+    /* Darker tomato */
+}
+
+.counter p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.map-container {
+    flex: 1;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    .map-panel-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .map-container,
+    .motivation-container {
+        margin-bottom: 1rem;
+    }
+
+    .motivation-container {
+        text-align: center;
+    }
+
+    .title h2 {
+        font-size: 1.8rem;
+    }
+
+    .title p {
+        font-size: 1rem;
+    }
+}

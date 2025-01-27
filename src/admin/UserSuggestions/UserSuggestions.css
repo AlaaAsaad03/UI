@@ -1,0 +1,249 @@
+.suggestions-page {
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+    font-size: 2rem;
+    color: tomato;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-underline {
+    width: 50%;
+    height: 4px;
+    background-color: #ffe8e4;
+    margin: 0 auto 40px;
+    border-radius: 2px;
+}
+
+.suggestion-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.suggestion-card {
+    background-color: white;
+    border: 2px dashed tomato;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 300px;
+    /* Set a fixed width */
+    margin: 0 auto;
+
+}
+
+.suggestion-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.suggestion-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid tomato;
+}
+
+.suggestion-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.suggestion-price {
+    font-size: 16px;
+    color: #777;
+}
+
+.suggestion-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.accept-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.reject-button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.suggestion-card {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-modall {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: auto;
+    animation: slideIn 0.3s ease-in-out;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ff6b6b;
+}
+
+.custom-modall .custom-overlayy {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 10px;
+}
+
+.modal-header h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #333;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #ff6b6b;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover {
+    color: #d84315;
+}
+
+.modal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 2px solid #ff6b6b;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.modal-footer button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.confirm-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.confirm-button:hover {
+    background-color: #43a047;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #e53935;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.blurred {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+.search-bar {
+    width: 70%;
+    padding: 12px 20px;
+    border: 2px solid #ff6b6b;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #f9f9f9;
+    margin-left: 12px;
+}
+
+.search-bar:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+    outline: none;
+}

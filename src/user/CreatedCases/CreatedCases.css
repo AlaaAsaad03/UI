@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Shadows+Into+Light&display=swap');
+
+/* Created Cases Container */
+.created-cases-container {
+    max-width: 1800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    animation: fadeIn 0.6s ease-out;
+    width: 1250px;
+}
+
+.-cases-container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cases List */
+.cases-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Case Card */
+.case-cardd {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.case-cardd:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Case Content Layout */
+.case-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.case-titlee {
+    font-size: 24px;
+    font-weight: bold;
+    color: #003153;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.case-items,
+.case-level {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.case-itemm::before {
+    content: '';
+    background-image: url('/doodle-bullet.png');
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+}
+
+.case-itemss span,
+.case-level span {
+    font-weight: bold;
+    color: #003153;
+}
+
+
+.case-itemss li {
+    font-size: 1.1em;
+    color: #34495e;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.case-itemss li:before {
+    font-size: 1.4em;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.delivered-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.case-itemm {
+    font-family: 'Caveat', cursive;
+    font-size: 1.4em;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    position: relative;
+    padding-left: 35px;
+    transform: rotate(-2deg);
+}
+
+.delivered-icon input {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Add Case Button */
+.add-case-button {
+    background-color: #003153;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 40px auto 0;
+    transition: background-color 0.3s, transform 0.2s ease;
+    font-size: 18px;
+}
+
+.add-case-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}
+
+/* Popup Styling */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    max-width: 1800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    animation: fadeIn 0.6s ease-out;
+    width: 1345px;
+    position: relative;
+}
+
+.close-buttonn {
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 30px auto 0;
+}
+
+.close-buttonn:hover {
+    background-color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .-cases-container {
+        padding: 30px;
+    }
+
+    .case-cardd {
+        width: 100%;
+    }
+
+    .add-case-button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .popup {
+        padding: 25px;
+    }
+
+    .close-button {
+        padding: 12px 20px;
+    }
+}
+
+.page-title {
+    font-size: 2rem;
+    /* Adjust size */
+    color: tomato;
+    /* Adjust color */
+    text-align: center;
+    /* Optional */
+    margin-bottom: 5px;
+    /* Adjust spacing */
+}
+
+.title-underline {
+    width: 50%;
+    /* Adjust width */
+    height: 4px;
+    /* Adjust thickness */
+    background-color: #ffe8e4;
+    /* Adjust color */
+    margin: 0 auto;
+    /* Center the underline */
+    border-radius: 2px;
+    /* Optional rounded corners */
+    margin-bottom: 50px;
+}
+
+
+.case-status {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    /* Adjust spacing as needed */
+}
+
+.case-status span {
+    margin-left: 8px;
+    /* Space between icon and label */
+    font-family: 'Caveat', cursive;
+    /* Match your font styles */
+    font-size: 1.2em;
+    /* Adjust font size as needed */
+}
+
+
+.case-header {
+    position: relative;
+    padding: 10px;
+}
+
+.case-status-top {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+.case-titlee {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003153;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.pin-icon-created {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 28px;
+    z-index: 10;
+}

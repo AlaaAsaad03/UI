@@ -1,0 +1,188 @@
+.my-cases-container {
+  max-width: 1800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  animation: fadeIn 0.6s ease-out;
+  width: 1250px;
+}
+
+.my-cases-container:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.page-title {
+  font-size: 32px;
+  color: #003153;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title-underline {
+  width: 100px;
+  height: 4px;
+  background-color: #003153;
+  margin: 0 auto 30px auto;
+}
+
+.cases-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Case Card */
+.mycase-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+  height: 100%;
+  transform: rotate(-2deg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mycase-date {
+  font-size: 1em;
+  color: #666;
+  font-style: italic;
+}
+
+
+
+.mycase-card:hover {
+  transform: translateY(-10px);
+}
+
+.mycase-card:hover {
+  transform: translateY(-10px);
+}
+
+.mycase-actions {
+  text-align: right;
+}
+
+.verify-btn {
+  background-color: tomato;
+  color: rgb(241, 220, 220);
+  border: tomato solid;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+  margin-left: 0;
+  /* Ensures no extra margin is added */
+}
+
+.action-button:hover {
+  background-color: tomato;
+  transform: scale(1.05);
+}
+
+
+.case-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mycase-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #003153;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.case-items,
+.case-level {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+  padding-left: 10px;
+  flex-grow: 1;
+}
+
+.case-items span,
+.case-level span {
+  font-weight: bold;
+  color: #003153;
+}
+
+
+.case-items li {
+  font-size: 1.1em;
+  color: #34495e;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.case-items li:before {
+  font-size: 1.4em;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.case-title {
+  display: flex;
+  align-items: center;
+  /* Gradient background */
+  padding: 5px 10px;
+  /* Padding for the title */
+  border-radius: 5px;
+  /* Rounded corners */
+  transition: background 0.3s ease;
+  /* Transition for hover effect */
+}
+
+
+.done-icon {
+  color: green;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+  /* Slightly larger icon */
+  animation: bounce 0.5s;
+  /* Animation */
+}
+
+/* Keyframe for bounce animation */
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-5px);
+  }
+
+  60% {
+    transform: translateY(-2.5px);
+  }
+}
